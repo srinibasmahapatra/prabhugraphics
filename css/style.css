@@ -80,10 +80,6 @@ section{
     box-shadow: var(--box-shadow);
 }
 
-.header .logo i{
-    color:rgb(0, 140, 255);
-}
-
 .header .navbar a{
     font-size: 1.7rem;
     margin:0 1rem;
