@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/sm.jpg">
+    <title>Srinibas Mahapatra | My Design</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-position: center;
+            background-size: cover;
+            padding-top: 17rem;
+            padding-bottom: 10rem;
+        }
+
+        .home .content {
+            text-align: center;
+            width: 60rem;
+        }
+
+        .home .content h3 {
+            color: var(--black);
+            font-size: 3rem;
+        }
+
+        .home .content h3 span {
+            color: rgb(0, 140, 255);
+        }
+
+        .home .content p {
+            color: var(--light-color);
+            font-size: 1.7rem;
+            padding: 1rem 0;
+            line-height: 1.8;
+        }
+    </style>
+
+    <style>
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 33.3%;
+            /* IE10 */
+            flex: 33.3%;
+            max-width: 33.3%;
+            padding: 0 10px;
+        }
+
+        .column img {
+            margin-top: 20px;
+            vertical-align: middle;
+            width: 100%;
+           
+        }
+
+        .column img:hover {
+            margin-top: 20px;
+            vertical-align: middle;
+            width: 100%;
+            box-shadow: 0px 0px 20px #888686;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 33.3%;
+                flex: 33.3%;
+                max-width: 33.3%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+        <a href="/" class="logo"><img src="image/logo.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="/">home</a>
+            <a href="">gallery</a>
+            <a href="blog.html">Meterials</a>
+            <a href="ideas.html">ideas</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        
+
+    </header>
+
+    <!-- header section ends -->
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Welcome to My Gallery</h3>
+            <h3> <span>my designs</span> </h3>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- products section starts  -->
+
+    <section class="products" id="products">
+
+        <div class="row">
+            <div class="column">
+                <img src="image/post/fitness.jpg" style="width:100%">
+                <img src="image/post/club party.jpg" style="width:100%">
+                <img src="image/post/fashion photography.jpg" style="width:100%">
+                <img src="image/post/shose.jpg" style="width:100%">
+                <img src="image/post/gandhi.jpg" style="width:100%">
+                <img src="image/post/business poster.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="image/post/furniture.jpg" style="width:100%">
+                <img src="image/post/rakhsi.jpg" style="width:100%">
+                <img src="image/post/creative.jpg" style="width:100%">
+                <img src="image/post/off sale shoping.jpg" style="width:100%">
+                <img src="image/post/spicy music.jpg" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="image/post/TYPOGRAPHY.jpeg" style="width:100%">
+                <img src="image/post/text.jpg" style="width:100%">
+                <img src="image/post/CR7 FINAL.jpg" style="width:100%">
+                <img src="image/post/product lunch.jpg" style="width:100%">
+                <img src="image/post/ux ui design.jpg" style="width:100%">
+                <img src="image/post/Tom and Jerry.jpg" style="width:100%">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- products section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+        <div class="credit"> Copyright <span> Srinibas Mahapatra </span> | 2022 all rights reserved </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+
+    <script src="js/script.js"></script>
+  <script src="js/copy.js"></script>
+
+</body>
+</html>

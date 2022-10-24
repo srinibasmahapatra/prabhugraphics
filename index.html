@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="image/sm.jpg">
+    <title>Srinibas Mahapatra | Design with a Smile</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+         .slider {
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+ 
+        .dots-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .dot {
+            width: 25px;
+            height: 5px;
+            margin: 15px 5px;
+            border-radius: .5rem;
+            background: rgba(39, 39, 39, .5);
+            cursor: pointer;
+        }
+
+        .dot.active {
+            background: #272727;
+        }
+   
+        button {
+            background: none;
+            border: none;
+        }
+
+        button .fas {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .btn-slide {
+            position: absolute;
+            top: 50%;
+            z-index: 10;
+            height: 5.5rem;
+            width: 5.5rem;
+            cursor: pointer;
+        }
+
+        .prev {
+            left: 3rem;
+            transform: translate(-50%, -50%);
+        }
+
+        .next {
+            right: 3rem;
+            transform: translate(50%, -50%);
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
+
+    <style>
+        .loadbtn {
+            margin-top: 1rem;
+            align-items: center;
+            display: inline-block;
+            padding: .8rem 3rem;
+            font-size: 2rem;
+            background-color: rgb(0, 140, 255);
+            color: white;
+            cursor: pointer;
+
+        }
+    </style>
+
+    <style>
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+
+        }
+
+        /* Create four equal columns that sits next to each other */
+        .column {
+            -ms-flex: 33.3%;
+            /* IE10 */
+            flex: 33.3%;
+            max-width: 33.3%;
+            padding: 0 10px;
+        }
+
+        .column img {
+            margin-top: 20px;
+            vertical-align: middle;
+            width: 100%;
+        }
+
+        .column img:hover {
+            margin-top: 20px;
+            vertical-align: middle;
+            width: 100%;
+            box-shadow: 0px 0px 20px #888686;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                -ms-flex: 33.3%;
+                flex: 33.3%;
+                max-width: 33.3%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                -ms-flex: 100%;
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+        <a href="" class="logo"><img src="image/logo.png" alt=""></a>
+
+        <nav class="navbar">
+            <a href="">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="blog.html">Meterials</a>
+            <a href="ideas.html">ideas</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+    <!-- 
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    -->
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+        <div class="box-container">
+            <div class="slideshow-container">
+                <div class="slider"> 
+                <div class="mySlides fade">
+                    <img src="image/slider.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider2.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="image/slider2.jpg" style="width:100%">
+                </div>
+                
+                <button class="btn-slide prev"><i class="fas fa-3x fa-chevron-circle-left"></i></button>
+                <button class="btn-slide next"><i class="fas fa-3x fa-chevron-circle-right"></i></button>
+            </div>
+            <div class="dots-container">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+                <span class="dot" data-slide="3"></span>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- products section starts  -->
+
+    <section class="products" id="products">
+        <h1 class="heading">Gallery</h1>
+
+        <div class="row">
+            <div class="column">
+                <img src="image/post/fitness.jpg" style="width:100%">
+                <img src="image/post/product lunch.jpg" style="width:100%"> 
+            </div>
+            <div class="column">
+                <img src="image/post/fashion photography.jpg" style="width:100%">
+                <img src="image/post/text.jpg" style="width:100%">
+                <img src="image/post/ux ui design.jpg" style="width:100%">           
+            </div>
+            <div class="column">
+                <img src="image/post/shose.jpg" style="width:100%">
+                <img src="image/post/spicy music.jpg" style="width:100%">
+            </div>
+        </div>
+        <br>
+        <h1 class="heading"><a href="gallery.html" class="loadbtn"> View More </a></h1>
+    </section>
+
+    <!-- products section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="review" id="review">
+        <h1 class="heading"> About me</h1>
+        <div class="swiper review-slider">
+            <div class="swiper-slide box">
+                <img src="image/about.jpg" alt="">
+                <h3>Srinibas Mahapatra</h3>
+                <p>design with a smile</p>
+                <p>I am a graphic designer also a web designer.</p>
+                <p>for poster, banner and logo design contact me.</p>
+                <br>
+                <p><i class="fas fa-phone"></i> +91 9938438279 </p>
+                <p><i class="fas fa-envelope"></i> hello.srinibasmahapatra@gmail.com </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+        <div class="credit"> Copyright <span> Srinibas Mahapatra </span> | 2022 all rights reserved </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/copy.js"></script>
+    
+ 
+</body>
+</html>
